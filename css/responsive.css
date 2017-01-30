@@ -1,0 +1,85 @@
+@media screen and (min-width: 400px) {
+  .cover-image {
+    background: url(../images/cover_desktop.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .dhoni-social-media #card-one {
+    display: inherit;
+  }
+  .dhoni-social-media #card-two {
+    display: inherit;
+  }
+  .dhoni-social-media #card-link-for-mobile {
+    display: none;
+}
+}
+
+@media screen and (min-width: 520px) {
+  body {
+    font-size: 18px;
+  }
+  /*Keep table contents font size 16px */
+  table {
+    font-size: 16px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dhoni-title-image {
+    margin-top: 20px;
+  }
+  .dhoni-timeline #title-mobile {
+    display: none;
+  }
+  .dhoni-timeline #title-desktop {
+    display: inherit;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .hero-title {
+    font-size: 100px;
+  }
+  .hero-text {
+    font-size: 50px;
+  }
+  .cover-image-2 {
+    background: url(../images/cover_desktop_2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  table {
+    table-layout: auto;
+    word-wrap: normal;
+  }
+}
+
+/*There is this problem I was facing with AOS library, that when mobile device
+is in landscape, .hero-text and hero-scoll was creating hell lot of problem, since
+i dont wanna mess with JS so I decided to go this way*/
+@media screen and (max-height: 410px) {
+  .hero {
+    top: 25%;
+  }
+  .hero-scroll {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-height: 410px) {
+  .hero-text {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 411px) and (max-height: 480px) {
+  .hero-scroll {
+    bottom: 30px;
+  }
+}
